@@ -1,13 +1,13 @@
 function Principal({ children }) {
     return (
-        <> {/* <--- esta etiqueta se llama fragmento  */}
-            <div>
+        <> {/* <--- esta etiqueta se llama un fragmento  */}
+            <sidenav>
                 <a href="/lista">Lista</a>
                 <a href="/crear">Crear</a>
-            </div>
-            <div>
+            </sidenav>
+            <main>
                 {children}
-            </div>
+            </main>
         </>
     );
 }
