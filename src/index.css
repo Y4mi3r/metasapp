@@ -1,1 +1,29 @@
 @import 'tailwindcss';
+
+:root {
+  --h-sm: 8px;
+  --h-md: 16px;
+  --h-lg: 24px;
+  --h-xl: 48px;
+  --h-principal: 64px;
+}
+
+@utility h-sm {
+  height: var(--h-sm);
+}
+
+@utility h-md {
+  height: var(--h-md);
+}
+
+@utility h-lg {
+  height: var(--h-lg);
+}
+
+@utility h-xl {
+  height: var(--h-xl);
+}
+
+@utility h-principal {
+  height: var(--h-principal);
+}

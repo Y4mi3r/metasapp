@@ -1,0 +1,64 @@
+/** 
+    * * Estilo de Encabezado
+*/
+@reference "../../index.css";
+
+.ecabezado{
+    @apply  flex h-xl justify-between relative shadow bg-white text-gray-700 ;
+}
+
+.contenedor{
+    @apply flex items-center pl-4;
+}
+
+.logo{
+    @apply mr-2 h-10 w-10;
+}
+
+.titulo {
+    @apply text-lg font-semibold text-gray-900 uppercase;
+}
+.vinculo{
+    @apply flex items-center px-4 h-xl hover:bg-gray-200;
+}
+
+.icono{
+    @apply h-6 w-6;
+}
+
+/** 
+    * * Estilo de Principal
+*/
+.principal {
+    height: calc(100vh - 64px);
+    @apply flex;
+}
+
+.aside{
+    @apply flex flex-col text-gray-700 bg-gray-100 shadow w-60 h-full;
+}
+
+.main {
+    @apply  w-full h-full overflow-scroll;
+}
+
+
+
+
+/** 
+    * * Estilo de Vinculo
+*/
+
+.vinculo{
+    @apply flex items-center px-4 h-xl hover:bg-gray-200;
+}
+.texto{
+    @apply ml-2 text-sm font-semibold text-gray-900;
+}
+
+/** 
+    * * Estilo de Pie
+*/
+.pie {
+    @apply shadow bg-gradient-to-r from-pink-500 to-purple-500 h-md text-xs text-right pr-2 text-white relative;
+}
