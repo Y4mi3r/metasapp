@@ -13,7 +13,7 @@ function Principal({ children }) {
                     <img src={Nueva} className={estilos.icono} />
                 </Vinculo>
             </aside>
-            <main className='main'>
+            <main className={estilos.main}>
                 {children}
             </main>
         </div>

@@ -27,3 +27,35 @@
 @utility h-principal {
   height: var(--h-principal);
 }
+
+.tarjeta{
+  @apply rounded-xl m-4 text-gray-700 text-xs mx-4 bg-gray-100 shadow-xl/30 ;
+}
+
+.boton{
+  @apply text-sm font-bold py-1 px-4 rounded-full border-b-gray-200 cursor-pointer transition-all;
+}
+
+.boton--negro{
+  @apply text-white hover:bg-black;
+}
+
+.boton--rojo{
+  @apply text-red-500 border;
+}
+
+.boton--gris{
+  @apply hover:bg-gray-200;
+}
+
+
+button {
+
+  background: #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}

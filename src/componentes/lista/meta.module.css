@@ -1,0 +1,25 @@
+@reference "../../index.css";
+
+.meta {
+    @apply flex p-3 justify-between;
+}
+
+.barra1{
+    @apply flex h-2 w-28 rounded bg-blue-200;
+}
+
+.barra2{
+    @apply flex h-2 rounded bg-gradient-to-l from-green-200 to-blue-500;
+}
+
+/**
+  * * forma del icono usando tailwind y css
+*/
+.icono {
+    @apply h-10 w-10 flex items-center justify-center text-2xl overflow-hidden rounded-full p-6;
+    box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+        -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+        inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+}
+
