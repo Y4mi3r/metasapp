@@ -4,12 +4,12 @@ import Lista from './img/lista.svg';
 import Nueva from './img/nueva.svg';
 function Principal({ children }) {
     return (
-        <div className={estilos.principal}> {/* <--- esta etiqueta se llama un fragmento  */}
+        <div className={estilos.principal}> 
             <aside className={estilos.aside}>
-                <Vinculo href="/lista" texto="Lista de Metas">
+                <Vinculo to="/lista" texto="Lista de Metas">
                     <img src={Lista} className={estilos.icono} />
                 </Vinculo>
-                <Vinculo href="/crear" texto="Nueva Meta">
+                <Vinculo to="/nueva" texto="Nueva Meta">
                     <img src={Nueva} className={estilos.icono} />
                 </Vinculo>
             </aside>

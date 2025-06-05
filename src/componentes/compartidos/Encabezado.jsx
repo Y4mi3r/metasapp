@@ -12,7 +12,7 @@ function Encabezado() {
                 <a href='/' className={estilos.titulo}>Metas App</a>
             </div>
             <nav className={estilos.vinculo}>
-                <Vinculo href="/perfil">
+                <Vinculo to="/perfil">
                     <img src={Perfil} className={estilos.icono} />
                 </Vinculo>
             </nav>

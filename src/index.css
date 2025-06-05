@@ -29,7 +29,7 @@
 }
 
 .tarjeta{
-  @apply rounded-xl m-4 text-gray-700 text-xs mx-4 bg-gray-100 shadow-xl/30 ;
+  @apply rounded-xl m-4 text-gray-700 text-xs mx-4 bg-gray-100 shadow-xl/30 overflow-hidden;
 }
 
 .boton{
@@ -37,11 +37,11 @@
 }
 
 .boton--negro{
-  @apply text-white hover:bg-black;
+  @apply text-white bg-gray-800 hover:bg-gray-800 hover:text-white;
 }
 
 .boton--rojo{
-  @apply text-red-500 border;
+  @apply text-red-500 border-red-500 hover:bg-red-500 hover:text-white ;
 }
 
 .boton--gris{
@@ -59,3 +59,13 @@ button:active {
   color: #666;
   box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
+
+.label {
+  @apply block uppercase text-xs font-bold mb-6;
+}
+
+.input{
+  @apply inset-shadow-transparent inset-shadow-gray-500 w-full p-2.5 border rounded-xl;
+
+}
+
