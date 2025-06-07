@@ -1,45 +1,9 @@
 import { createContext, useReducer } from "react";
 
-/*const listaMock = [{
-    "id": "1",
-    "detalles": "Correr por 30 minutos",
-    "periodo": "día",
-    "eventos": 1,
-    "icono": "🏃‍➡️",
-    "meta": 356,
-    "plazo": "2030-01-01",
-    "completado": 5,
-},
-{
-    "id": "2",
-    "detalles": "Leer libros",
-    "periodo": "año",
-    "eventos": 6,
-    "icono": "📚",
-    "meta": 12,
-    "plazo": "2030-01-01",
-    "completado": 0,
-},
-{
-    "id": "3",
-    "detalles": "Viajar a parques nacionales",
-    "periodo": "mes",
-    "eventos": 1,
-    "icono": "✈️",
-    "meta": 60,
-    "plazo": "2030-01-01",
-    "completado": 40,
-}];
-*/
 const estadoInicial = {        // es una forma de normalizar los datos 
     orden: [],   // va a tener una lista de las id de la lista
     objetos: {}  // va a guardar un mapa de las id de la lista
 };
-/*const memoria = localStorage.getItem('metas');
-const estadoInicial = memoria ? JSON.parse(memoria): {
-    orden: [],
-    objetos: {}
-};*/
 
 function reductor(estado, accion){
     switch (accion.tipo) {
@@ -89,9 +53,6 @@ function reductor(estado, accion){
             throw new Error();
     }
 }
-
-//const metas = reductor(estadoInicial, {tipo: 'colocar', metas: '/metas.json'});
-// reductor(estadoInicial, {tipo: 'colocar', metas: listaMock});
 
 
 export const Contexto = createContext(null);
